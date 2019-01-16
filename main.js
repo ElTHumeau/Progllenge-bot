@@ -70,7 +70,7 @@ bot.on("guildMemberAdd", function(member) {
         .setTimestamp()
         .setFooter(footer, footer2)
     member.guild.channels.find("name","chat").send(MemberJoinEmbed);
-});
+
 });
 
 bot.on("guildMemberRemove", function(member) {
@@ -92,5 +92,5 @@ bot.on("guildMemberRemove", function(member) {
         .setFooter(footer, footer2)
   member.guild.channels.find("name", "chat").send(MemberLeaveEmbed);
 });
-});
+
 bot.login(process.env.TOKEN);
