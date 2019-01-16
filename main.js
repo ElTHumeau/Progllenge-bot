@@ -69,7 +69,7 @@ bot.on("guildMemberAdd", function(member) {
         .setColor(color)
         .setTimestamp()
         .setFooter(footer, footer2)
-    member.guild.channels.find("name","chat").send(MemberJoinEmbed);
+    member.guild.channels.find("name","nouveaux").send(MemberJoinEmbed);
 
 });
 
@@ -90,7 +90,7 @@ bot.on("guildMemberRemove", function(member) {
         .setColor("0xFF0000")
         .setTimestamp()
         .setFooter(footer, footer2)
-  member.guild.channels.find("name", "chat").send(MemberLeaveEmbed);
+  member.guild.channels.find("name", "nouveaux").send(MemberLeaveEmbed);
 });
 
 bot.login(process.env.TOKEN);
