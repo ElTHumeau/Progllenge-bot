@@ -1,1 +1,1 @@
-woker: node index
+woker: node main
