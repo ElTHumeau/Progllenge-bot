@@ -49,6 +49,16 @@ bot.on('message', function(message) {
         if(message.content === 'Salut') {
             message.reply('Bonjour')
         }
+    
+        if (message.content === PREFIX + "invite"){
+           var embed = new Discord.RichEmbed()
+           .addField("Lien d'invitation Discord", "📨 | https://discord.gg/bdb6weH")
+           .setColor(color)
+           .setTimestamp()
+           .setFooter(footer, footer2)
+           message.delete()
+           message.channel.send(embed);
+        }
     });
 
 bot.on("guildMemberAdd", function(member) {               
