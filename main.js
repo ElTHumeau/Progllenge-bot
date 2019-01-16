@@ -41,6 +41,8 @@ bot.on("ready", function () {
 });
 
 bot.on('message', function(message) {
+     
+       var member = message.member;
 
         if(message.content === 'Progllenge') {
             message.reply("Progllenge c'est super.")
