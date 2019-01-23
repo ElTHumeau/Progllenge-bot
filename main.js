@@ -1,3 +1,4 @@
+/* Développé par ELTHhumeau */
 const Discord = require("discord.js");
 const YTDL = require("ytdl-core");
 const PREFIX = "P!";
@@ -25,7 +26,7 @@ var servers = {};
 bot.on("ready", function () {
   var games = [
         "P!help | Progllenge Bot V1.0",
-        "Développé par Anthony",
+        "Développé par ELTHumeau et Anthony",
         "http://progllenge.nietsloh.com",
         "" + new Date(),
         bot.users.size + " utilisateurs !"
@@ -66,7 +67,7 @@ bot.on('message', function(message) {
 bot.on("guildMemberAdd", function(member) {               
   var games = [
         "P!help | Progllenge Bot V1.0",
-        "Développé par Anthony",
+        "Développé par ELTHumeau et Anthony",
         "http://progllenge.nietsloh.com",
         "" + new Date(),
         bot.users.size + " utilisateurs !"
@@ -88,7 +89,7 @@ bot.on("guildMemberAdd", function(member) {
 bot.on("guildMemberRemove", function(member) {
   var games = [
         "P!help | Progllenge Bot V1.0",
-        "Développé par Anthony",
+        "Développé par ELTHumeau et Anthony",
         "http://progllenge.nietsloh.com",
         "" + new Date(),
         bot.users.size + " utilisateurs !"
