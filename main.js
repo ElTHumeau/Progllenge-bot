@@ -11,8 +11,6 @@ var footer = ("Progllenge")
 var footer2 = ('http://image.noelshack.com/fichiers/2019/03/4/1547681890-logo.jpg')
 var color = ("0x78eeff")
 
-const youtube = new YouTube("AIzaSyDE684AY4Th50yKvN7lZ9GroJiFvF5yjy8");
-
 const queue = new Map();
 
 function generateHex() {
