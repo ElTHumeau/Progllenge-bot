@@ -63,17 +63,6 @@ bot.on('message', function(message) {
     });
 
 bot.on("guildMemberAdd", function(member) {               
-  var games = [
-        "P!help | Progllenge Bot V1.0",
-        "Développé par ELTHumeau et Anthony",
-        "http://progllenge.nietsloh.com",
-        "" + new Date(),
-        bot.users.size + " utilisateurs !"
-    ]
-        bot.user.setActivity(setInterval(function() {
-        bot.user.setActivity(games[Math.floor(Math.random() * games.length)], {url:"https://www.twitch.tv/Progllenge", type: "STREAMING"})
-    }, 3000))
-  
      member.addRole(member.guild.roles.find("name", "Membres"));
     var MemberJoinEmbed = new Discord.RichEmbed()
         .addField(`Nous sommes désormais **${member.guild.memberCount}** sur le serveur :white_check_mark:`,`Bienvenue à toi, ${member.displayName} sur le Discord **${member.guild.name}.**\n`)
@@ -85,17 +74,6 @@ bot.on("guildMemberAdd", function(member) {
 });
 
 bot.on("guildMemberRemove", function(member) {
-  var games = [
-        "P!help | Progllenge Bot V1.0",
-        "Développé par ELTHumeau et Anthony",
-        "http://progllenge.nietsloh.com",
-        "" + new Date(),
-        bot.users.size + " utilisateurs !"
-    ]
-        bot.user.setActivity(setInterval(function() {
-        bot.user.setActivity(games[Math.floor(Math.random() * games.length)], {url:"https://www.twitch.tv/Progllenge", type: "STREAMING"})
-    }, 3000))
-  
     var MemberLeaveEmbed = new Discord.RichEmbed()
         .addField(`Nous sommes désormais **${member.guild.memberCount}** sur le serveur :x:`,`${member.displayName} a quitté **${member.guild.name} :x:**\n`)
         .setColor("0xFF0000")
